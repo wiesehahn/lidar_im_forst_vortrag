@@ -8,7 +8,6 @@ format:
     width: 1600
     height: 1200
     margin: 0.1
-    #smaller: true
     title-slide-attributes:
       data-background-image: https://cdnb.artstation.com/p/assets/images/images/024/582/363/large/rainbow-t-20190102-laser-forest2.jpg?1582880467
       data-background-size: cover
@@ -16,21 +15,18 @@ format:
     slide-number: c/t
     transition: slide
     background-transition: fade
-    preview-links: false #true
-    preload-iframes: false # true
-    # multiplex: true
-    # embed-resources: true
+    preview-links: false 
+    preload-iframes: false 
     theme: [default, custom.scss]
     navigation-mode: vertical
     tbl-cap-location: bottom
     chalkboard: true
-    #logo: https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png
 
 revealjs-plugins:
   - verticator
   - attribution
 
-bibliography: ../references.bib
+bibliography: references.bib
 ---
 
 # Einordnung
@@ -231,7 +227,7 @@ Verfügbarkeit von ALS Daten in Niedersachsen nach Aufnahmemonat
 
 XYZ-Koordinaten - als Textdatei / LAS / LAZ / COPC
 
-![](../resources/figures/punktwolke.png)
+![](figures/punktwolke.png)
 
 ::: {.notes}
 - große Datenmengen
@@ -240,8 +236,8 @@ XYZ-Koordinaten - als Textdatei / LAS / LAZ / COPC
 
 ## Attribute -XYZ
 
-![](../resources/figures/rheinhausen_points_z.jpeg){width=800}
-![](../resources/figures/rheinhausen_points_z_sideview.jpeg){width=800}
+![](figures/rheinhausen_points_z.jpeg){width=800}
+![](figures/rheinhausen_points_z_sideview.jpeg){width=800}
 
 ::: {.notes}
 - extrem genaue Lage der Punkte
@@ -249,8 +245,8 @@ XYZ-Koordinaten - als Textdatei / LAS / LAZ / COPC
 
 ## Attribute -Number of Returns {transition="fade" transition-speed="fast"}
 
-![](../resources/figures/rheinhausen_points_numberofreturns.jpeg){width=800}
-![](../resources/figures/rheinhausen_points_numberofreturns_sideview.jpeg){width=800}
+![](figures/rheinhausen_points_numberofreturns.jpeg){width=800}
+![](figures/rheinhausen_points_numberofreturns_sideview.jpeg){width=800}
 
 ::: {.notes}
 ~ Schichigkeit
@@ -258,13 +254,13 @@ XYZ-Koordinaten - als Textdatei / LAS / LAZ / COPC
 
 ## Attribute -Return Number {transition="fade" transition-speed="fast"}
 
-![](../resources/figures/rheinhausen_points_returnnumber.jpeg){width=800}
-![](../resources/figures/rheinhausen_points_returnnumber_sideview.jpeg){width=800}
+![](figures/rheinhausen_points_returnnumber.jpeg){width=800}
+![](figures/rheinhausen_points_returnnumber_sideview.jpeg){width=800}
 
 ## Attribute -Intensity {transition="fade" transition-speed="fast"}
 
-![](../resources/figures/rheinhausen_points_intensity.jpeg){width=800}
-![](../resources/figures/rheinhausen_points_intensity_sideview.jpeg){width=800}
+![](figures/rheinhausen_points_intensity.jpeg){width=800}
+![](figures/rheinhausen_points_intensity_sideview.jpeg){width=800}
 
 ::: {.notes}
 Anteil Relektierter Photonen
@@ -328,11 +324,11 @@ Punkte werden reduziert auf Oberfläche / Gelände
 <br>
 
 ::: {.r-stack}
-![](../resources/figures/rheinhausen_dtm.jpeg){width=1000}
+![](figures/rheinhausen_dtm.jpeg){width=1000}
 
-![](../resources/figures/rheinhausen_dsm.jpeg){.fragment width=1000 fragment-index=1}
+![](figures/rheinhausen_dsm.jpeg){.fragment width=1000 fragment-index=1}
 
-![](../resources/figures/rheinhausen_chm.jpeg){.fragment width=1000 fragment-index=2}
+![](figures/rheinhausen_chm.jpeg){.fragment width=1000 fragment-index=2}
 :::
 
 
@@ -341,15 +337,15 @@ Punkte werden reduziert auf Oberfläche / Gelände
 ## beyond Standardprodukte
 
 ::: {.r-stack}
-![](../resources/figures/rheinhausen_dtm_hillshade2.jpeg){.fragment width=1200 fragment-index=0}
+![](figures/rheinhausen_dtm_hillshade2.jpeg){.fragment width=1200 fragment-index=0}
 
-![](../resources/figures/rheinhausen_low-vegetation.jpeg){.fragment width=1200 fragment-index=1}
+![](figures/rheinhausen_low-vegetation.jpeg){.fragment width=1200 fragment-index=1}
 
-![](../resources/figures/rheinhausen_intensity-lower.jpeg){.fragment width=1200 fragment-index=2}
+![](figures/rheinhausen_intensity-lower.jpeg){.fragment width=1200 fragment-index=2}
 
-![](../resources/figures/rheinhausen_intensity-upper.jpeg){.fragment width=1200 fragment-index=3}
+![](figures/rheinhausen_intensity-upper.jpeg){.fragment width=1200 fragment-index=3}
 
-![](../resources/figures/rheinhausen_ortho.jpeg){.fragment width=1200 fragment-index=4}
+![](figures/rheinhausen_ortho.jpeg){.fragment width=1200 fragment-index=4}
 
 :::
 
@@ -358,9 +354,9 @@ Punkte werden reduziert auf Oberfläche / Gelände
 
 ::: {.r-stack}
 
-![](../resources/figures/baum_schillerwiesen_chm.jpeg){.fragment .fade-out}
+![](figures/baum_schillerwiesen_chm.jpeg){.fragment .fade-out}
 
-![](../resources/figures/baum_schillerwiesen.gif){.fragment}
+![](figures/baum_schillerwiesen.gif){.fragment}
 
 :::
 
@@ -374,13 +370,13 @@ in den Daten steckt mehr
 
 ::: {.r-stack}
 
-![](../resources/figures/plot_raw.png)
+![](figures/plot_raw.png)
 
-![](../resources/figures/plot_linear_horizontal.png){.fragment}
+![](figures/plot_linear_horizontal.png){.fragment}
 
-![](../resources/figures/plot_linear_vertical.png){.fragment}
+![](figures/plot_linear_vertical.png){.fragment}
 
-![](../resources/figures/hochsitz.gif){.fragment}
+![](figures/hochsitz.gif){.fragment}
 
 :::
 
@@ -444,9 +440,9 @@ Forest Gap Change Detection (from https://github.com/carlos-alberto-silva/Forest
 
 ## Umweltmonitoring
 
-![](../resources/figures/versuchsflaeche_goettingen_topview.jpg)
+![](figures/versuchsflaeche_goettingen_topview.jpg)
 
-![](../resources/figures/versuchsflaeche_goettingen_sideview.jpg)
+![](figures/versuchsflaeche_goettingen_sideview.jpg)
 
 ![](https://www.researchgate.net/profile/Danilo-Almeida/publication/330203798/figure/fig4/AS:712488966447105@1546882015531/LAD-Leaf-Area-Density-profile-and-LAI-Leaf-Area-Index-calculation-Gray-voxels.ppm) LAD/ LAI
 
@@ -532,13 +528,13 @@ Approaches used to characterize change in forest attributes (from @tompalskiEsti
 ## Multitemporales Beispiel
 
 ::: {.r-stack}
-![](../resources/figures/chm_2017.jpeg){.fragment width=1200 fragment-index=0}
+![](figures/chm_2017.jpeg){.fragment width=1200 fragment-index=0}
 
-![](../resources/figures/chm_2020.jpeg){.fragment width=1200 fragment-index=1}
+![](figures/chm_2020.jpeg){.fragment width=1200 fragment-index=1}
 
-![](../resources/figures/chm_2017-chm_2020.jpeg){.fragment width=1200 fragment-index=2}
+![](figures/chm_2017-chm_2020.jpeg){.fragment width=1200 fragment-index=2}
 
-![](../resources/figures/chm_2017-chm_2020_detail.jpeg){.fragment width=1200 fragment-index=3}
+![](figures/chm_2017-chm_2020_detail.jpeg){.fragment width=1200 fragment-index=3}
 :::
 
 ::: {.notes}
@@ -549,7 +545,7 @@ z.B. Veränderung der Bestandesstruktur in Naturwäldern
 
 ## Bestandesinventur
 ::: {#fig-nrt-inventory}
-![](../resources/figures/nrt_inventory.jpeg)
+![](figures/nrt_inventory.jpeg)
 
 Concept of updated forest inventory  (from @coopsFrameworkRealtimeForest2023)
 :::
@@ -637,11 +633,11 @@ auch Polter, Hochsitze, ...
 ## Rückegassen {transition="fade" transition-speed="fast"}
 
 ::: {.r-stack}
-![](../resources/figures/dtm_2017_hillshade.jpeg){width=1200}
+![](figures/dtm_2017_hillshade.jpeg){width=1200}
 
-![](../resources/figures/dtm_2020_hillshade.jpeg){.fragment width=1200 fragment-index=1}
+![](figures/dtm_2020_hillshade.jpeg){.fragment width=1200 fragment-index=1}
 
-![](../resources/figures/dtm_2017-dtm_2020_detail_hillshade.jpeg){.fragment width=1200 fragment-index=2}
+![](figures/dtm_2017-dtm_2020_detail_hillshade.jpeg){.fragment width=1200 fragment-index=2}
 :::
 
 ::: {.notes}
@@ -654,7 +650,7 @@ Kontrolle flächige Befahrung
 Risikomodellierung, Schadensbewertung, Aufforstungsplanung,...
 
 ::: {#fig-friederike}
-![](../resources/figures/friederike.png)
+![](figures/friederike.png)
 
 Verschneidung von ALS und kartierten Schadflächen
 :::
@@ -676,7 +672,7 @@ Biomasse mit allometrischen Funktionen wurde deutlich unterschätzt
 ## TLS - Waldstruktur {visibility="uncounted"}
 
 ::: {#fig-tls-sideview}
-![](../resources/figures/versuchsflaeche-tls.jpg)
+![](figures/versuchsflaeche-tls.jpg)
 
 Sideview of experimental site in TLS (from [twitter.com/LouiseTerrynn](https://twitter.com/LouiseTerrynn/status/1636360143519764482))
 :::
