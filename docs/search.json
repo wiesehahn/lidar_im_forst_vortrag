@@ -1,0 +1,387 @@
+[
+  {
+    "objectID": "presentation.html#funktionsweise",
+    "href": "presentation.html#funktionsweise",
+    "title": "Licht für den Wald",
+    "section": "Funktionsweise",
+    "text": "Funktionsweise\nLidar - Light Detection and Ranging\n\n\n\n\n\n\n\n\n\nAktives System (Nahes Infrarot - 1064nm Wellenlänge)\n2 MHz\nLicht besteht aus Photonen\nes wird detektiert wann wieviele refkleftiert werden\nviele Returns messbar"
+  },
+  {
+    "objectID": "presentation.html#plattformen",
+    "href": "presentation.html#plattformen",
+    "title": "Licht für den Wald",
+    "section": "Plattformen",
+    "text": "Plattformen\n\n\n\n\n\n\n\n\nSpaceborne laser scanning (SLS) - global\nAirborne laser scanning (ALS) - 10-1000 km²\nUnmanned aerial vehicle laser scanning (ULS) - 0.02-10 km²\nMobile laser scanning (MLS) - 5-100 ha\nPersonal laser scanning (PLS) - 0.25-5 ha\nTerrestrial laser scanning (TLS) - 0.01-1 ha\n\n\n\n\n\naus (Guo et al. 2022)"
+  },
+  {
+    "objectID": "presentation.html#europa",
+    "href": "presentation.html#europa",
+    "title": "Licht für den Wald",
+    "section": "Europa",
+    "text": "Europa\n\nLänder in Europa mit ALS Daten als Open Data:\n(Austria) , Belgium , Denmark , England , Estonia , Finland , France , (Ireland) , Italy , Latvia , Luxembourg , Netherlands , Norway , Poland , Portugal , Scotland , Slovakia , Slovenia , Spain , Catalonia (Spain) , Sweden , Switzerland , (Wales)\naus Moudrý et al. (2023)\n\n-> Die meisten Europäischen Länder stellen die Daten kostenfrei zur Verfügung"
+  },
+  {
+    "objectID": "presentation.html#deutschland",
+    "href": "presentation.html#deutschland",
+    "title": "Licht für den Wald",
+    "section": "Deutschland",
+    "text": "Deutschland\n\nBundesländer mit ALS Daten als Open Data:\n(Bayern), Berlin, Brandenburg, Hessen, Nordrhein-Westfalen, (Sachsen-Anhalt), Sachsen, Thüringen\nTabelle unter gist.github.com/wiesehahn\n\n-> In Deutschland bisher sehr unterschiedliche Verfügbarkeiten (Datenformat, Kosten, etc.)"
+  },
+  {
+    "objectID": "presentation.html#niedersachsen",
+    "href": "presentation.html#niedersachsen",
+    "title": "Licht für den Wald",
+    "section": "Niedersachsen",
+    "text": "Niedersachsen\n\nDie Daten sind kostenpflichtig, aber für NW-FVA über Kooperationsvertrag nutzbar\n\nDie Daten haben eine Punktdichte von >= 4 Punkte pro m²\nFlächige Abdeckung mit Daten von ~ 2013-2020\nDaten außerhalb der Vegetationszeit\n2023 evtl. Daten aus Eigenbefliegung für den Solling\n\n\n-> Daten in Niedersachsen recht heterogen, trotzdem nutzbar"
+  },
+  {
+    "objectID": "presentation.html#niedersachsen-1",
+    "href": "presentation.html#niedersachsen-1",
+    "title": "Licht für den Wald",
+    "section": "Niedersachsen",
+    "text": "Niedersachsen\n\nFigure 1: Verfügbarkeit von ALS Daten in Niedersachsen nach Aufnahmejahr"
+  },
+  {
+    "objectID": "presentation.html#als-datenverfügbarkeit-niedersachsen",
+    "href": "presentation.html#als-datenverfügbarkeit-niedersachsen",
+    "title": "Licht für den Wald",
+    "section": "ALS Datenverfügbarkeit Niedersachsen",
+    "text": "ALS Datenverfügbarkeit Niedersachsen\n\nFigure 2: Verfügbarkeit von ALS Daten in Niedersachsen nach Aufnahmemonat"
+  },
+  {
+    "objectID": "presentation.html#digitaler-zwilling-deutschland",
+    "href": "presentation.html#digitaler-zwilling-deutschland",
+    "title": "Licht für den Wald",
+    "section": "Digitaler Zwilling Deutschland",
+    "text": "Digitaler Zwilling Deutschland\nProjekt für eine bundesweite Lidar-Erfassung\n\n\n\nBefliegung ab 2023(?)\nDatenverfügbarkeit ab ?\nWiederholung alle 3 Jahre geplant(?), vorerst 2x\nBefliegung März bis Oktober (Vegetationszeit)\nca. >=40 Punkte (Pulses) pro m²\nSingle Photon Lidar (anderes Sensorprinzip)\nDaten nicht frei zugänglich\nprimär für Bundesbehörden gedacht"
+  },
+  {
+    "objectID": "presentation.html#punktwolke",
+    "href": "presentation.html#punktwolke",
+    "title": "Licht für den Wald",
+    "section": "Punktwolke",
+    "text": "Punktwolke\nXYZ-Koordinaten - als Textdatei / LAS / LAZ / COPC\n\n\n\ngroße Datenmengen\n1km² Ausschnitt Rheinhausen > 41 Mio. Punkte (~2GB als LAS)"
+  },
+  {
+    "objectID": "presentation.html#attribute--xyz",
+    "href": "presentation.html#attribute--xyz",
+    "title": "Licht für den Wald",
+    "section": "Attribute -XYZ",
+    "text": "Attribute -XYZ\n \n\n\nextrem genaue Lage der Punkte"
+  },
+  {
+    "objectID": "presentation.html#attribute--number-of-returns",
+    "href": "presentation.html#attribute--number-of-returns",
+    "title": "Licht für den Wald",
+    "section": "Attribute -Number of Returns",
+    "text": "Attribute -Number of Returns\n \n\n~ Schichigkeit"
+  },
+  {
+    "objectID": "presentation.html#attribute--return-number",
+    "href": "presentation.html#attribute--return-number",
+    "title": "Licht für den Wald",
+    "section": "Attribute -Return Number",
+    "text": "Attribute -Return Number"
+  },
+  {
+    "objectID": "presentation.html#attribute--intensity",
+    "href": "presentation.html#attribute--intensity",
+    "title": "Licht für den Wald",
+    "section": "Attribute -Intensity",
+    "text": "Attribute -Intensity\n \n\n\nAnteil Relektierter Photonen\n\nOberflächenbeschaffenheit"
+  },
+  {
+    "objectID": "presentation.html#abgeleitete-standardprodukte",
+    "href": "presentation.html#abgeleitete-standardprodukte",
+    "title": "Licht für den Wald",
+    "section": "abgeleitete Standardprodukte",
+    "text": "abgeleitete Standardprodukte\n\nPunkte werden reduziert auf Oberfläche / Gelände\n\n\n\nGelände\n= Digitales Geländemodell (DGM)\n= Digital Terrain Model (DTM)\n\nOberfläche\n= Digitales Oberflächenmodell (DOM)\n= Digital Surface Model (DSM)\n\nnormalisierte Oberfläche\n= normalisiertes Oberfllächenmodell (nDOM)\n= normalized Surface Model (nDSM)\n= Canopy Height Model (CHM)\n\n\n\n\n\n\numwandlung von Punkten in Raster / Mesh"
+  },
+  {
+    "objectID": "presentation.html#abgeleitete-standardprodukte-1",
+    "href": "presentation.html#abgeleitete-standardprodukte-1",
+    "title": "Licht für den Wald",
+    "section": "abgeleitete Standardprodukte",
+    "text": "abgeleitete Standardprodukte"
+  },
+  {
+    "objectID": "presentation.html#beyond-standardprodukte",
+    "href": "presentation.html#beyond-standardprodukte",
+    "title": "Licht für den Wald",
+    "section": "beyond Standardprodukte",
+    "text": "beyond Standardprodukte"
+  },
+  {
+    "objectID": "presentation.html#punktbasierte-analysen",
+    "href": "presentation.html#punktbasierte-analysen",
+    "title": "Licht für den Wald",
+    "section": "Punktbasierte Analysen",
+    "text": "Punktbasierte Analysen\n\n\n\n\n\nin den Daten steckt mehr"
+  },
+  {
+    "objectID": "presentation.html#punktbasierte-analysen-1",
+    "href": "presentation.html#punktbasierte-analysen-1",
+    "title": "Licht für den Wald",
+    "section": "Punktbasierte Analysen",
+    "text": "Punktbasierte Analysen"
+  },
+  {
+    "objectID": "presentation.html#publikationen",
+    "href": "presentation.html#publikationen",
+    "title": "Licht für den Wald",
+    "section": "Publikationen",
+    "text": "Publikationen\n\nFigure 3: Number of publications by year for (lidar OR laser) AND (forestry OR forest OR tree) (from dimensions.ai)\n\n19 der 20 meistzitierten Wisschenschaftler kommen aus Skandinavien oder Nordamerika\n\nErfassung recht schnell rentabel in Remote-areas\nIn Deutschland bisher kaum genutzt - optische Daten (Luftbilder, Satellitendaten) haben Tradition - im Vergleich zu nordischen Wäldern sind Wälder in Deutschland gut erreichbar, kleinräumig gemanagt und strukturreicher - Lidar-Daten sind (waren) recht teuer lässt sich u.A. durch die schlechte Datenverfügbarkeit erklären auch Digitalisierungswille"
+  },
+  {
+    "objectID": "presentation.html#waldstruktur",
+    "href": "presentation.html#waldstruktur",
+    "title": "Licht für den Wald",
+    "section": "Waldstruktur",
+    "text": "Waldstruktur\n\n\n\nFigure 4: Variables to describe the vertical structure of the vegetation (from Moudrý et al. (2023))\n\n\n\n\nKronenlücken genutzt für Habitatkartierungen in Korrelation mit Biodiversität Waldrandstruktur (WSL)\n\n\ne.g. Moudrý et al. (2023), Beland et al. (2019), Davison, Donoghue, and Galiatsatos (2020), Lines et al. (2022), Rocha et al. (2023), Nowak, Pędziwiatr, and Bogawski (2022), Jarron et al. (2020)"
+  },
+  {
+    "objectID": "presentation.html#kronenlücken",
+    "href": "presentation.html#kronenlücken",
+    "title": "Licht für den Wald",
+    "section": "Kronenlücken",
+    "text": "Kronenlücken\n\nFigure 5: Forest Gap Change Detection (from https://github.com/carlos-alberto-silva/ForestGapR)"
+  },
+  {
+    "objectID": "presentation.html#umweltmonitoring",
+    "href": "presentation.html#umweltmonitoring",
+    "title": "Licht für den Wald",
+    "section": "Umweltmonitoring",
+    "text": "Umweltmonitoring\n\n\n LAD/ LAI\n\nfrom Almeida et al. (2019)\n\n\nLeaf-area Density / LAI Interzeption Streufall"
+  },
+  {
+    "objectID": "presentation.html#stichprobeninventuren",
+    "href": "presentation.html#stichprobeninventuren",
+    "title": "Licht für den Wald",
+    "section": "Stichprobeninventuren",
+    "text": "Stichprobeninventuren\n\n\naus Weiser et al. (2022)\n\n\nZum Upscaling von Stichprobeninventuren Inventurpunkte können auch mit ALS Referenziert werden"
+  },
+  {
+    "objectID": "presentation.html#stichprobeninventuren-1",
+    "href": "presentation.html#stichprobeninventuren-1",
+    "title": "Licht für den Wald",
+    "section": "Stichprobeninventuren",
+    "text": "Stichprobeninventuren\nfür ein stratifiziertes Sampling neuer oder ergänzender Stichprobenpunkte\n\n\naus (Goodbody et al. 2023)\n\n\nZum stratifizierten Sampling der Stichproben"
+  },
+  {
+    "objectID": "presentation.html#stichprobeninventuren-2",
+    "href": "presentation.html#stichprobeninventuren-2",
+    "title": "Licht für den Wald",
+    "section": "Stichprobeninventuren",
+    "text": "Stichprobeninventuren\n\n\naus Jucker et al. (2017)\n\n\nBaumhöhe kann ähnlich genau gemessen werden wie im Feld"
+  },
+  {
+    "objectID": "presentation.html#biomasse-modellierung",
+    "href": "presentation.html#biomasse-modellierung",
+    "title": "Licht für den Wald",
+    "section": "Biomasse Modellierung",
+    "text": "Biomasse Modellierung\n\nFigure 6: Landscape scale extrapolation of wood volume (from Levick, Hessenmöller, and Schulze (2016))"
+  },
+  {
+    "objectID": "presentation.html#waldwachstum",
+    "href": "presentation.html#waldwachstum",
+    "title": "Licht für den Wald",
+    "section": "Waldwachstum",
+    "text": "Waldwachstum\n\nFigure 7: Approaches used to characterize change in forest attributes (from Tompalski et al. (2021))\n\nmit mehreren Aufnahmen lässt sich Wachstum ableiten\nRetrospektiv basierend auf Punkten, Area-based oder auf Einzelbaumebene\ndirekt ~(P2-P1), indirekt ~P2 - ~P1\n\nIntegration in Waldwachstumsmodelle\nAbleitung von Wachstumsfunktionen"
+  },
+  {
+    "objectID": "presentation.html#multitemporales-beispiel",
+    "href": "presentation.html#multitemporales-beispiel",
+    "title": "Licht für den Wald",
+    "section": "Multitemporales Beispiel",
+    "text": "Multitemporales Beispiel\n\n\n\n\n\n\n\nz.B. Veränderung der Bestandesstruktur in Naturwäldern"
+  },
+  {
+    "objectID": "presentation.html#bestandesinventur",
+    "href": "presentation.html#bestandesinventur",
+    "title": "Licht für den Wald",
+    "section": "Bestandesinventur",
+    "text": "Bestandesinventur\n\nFigure 8: Concept of updated forest inventory (from Coops et al. (2023))\nForsteinrichtung - zur Unterstützung (Struktur, Höhen Bestandesabgrenzungen,…) - neue Konzepte für kontnuierliche Informationen"
+  },
+  {
+    "objectID": "presentation.html#totholz",
+    "href": "presentation.html#totholz",
+    "title": "Licht für den Wald",
+    "section": "Totholz",
+    "text": "Totholz\n\nFigure 9: Graphical abstract of tree trunk detection with ALS data (from Heinaro et al. (2021))\nauch stehendes Totholz"
+  },
+  {
+    "objectID": "presentation.html#geomorphologie",
+    "href": "presentation.html#geomorphologie",
+    "title": "Licht für den Wald",
+    "section": "Geomorphologie",
+    "text": "Geomorphologie\n\nFigure 10: Multiscale unsphericity curvature calculated from DTM as geomorphometric terrain index.\nLehre von den Formen der Erdoberfläche - Neigung - Ausrichtung - Standortanalyse - Bruchwälder, Blockschutthalden - Befahrbarkeit"
+  },
+  {
+    "objectID": "presentation.html#hydrologie",
+    "href": "presentation.html#hydrologie",
+    "title": "Licht für den Wald",
+    "section": "Hydrologie",
+    "text": "Hydrologie\n\nFigure 11: Topographischer Feuchteindex (von julius-kuehn.de)\nStandortanalyse Bruchwälder, Blockschutthalden"
+  },
+  {
+    "objectID": "presentation.html#hydrologie-1",
+    "href": "presentation.html#hydrologie-1",
+    "title": "Licht für den Wald",
+    "section": "Hydrologie",
+    "text": "Hydrologie\n\nFigure 12: Simulation des oberflächennaheeen Waserflusses (from baharmon.github.io)\nBodenerosion Wegebau / Instandhaltung"
+  },
+  {
+    "objectID": "presentation.html#rückegassen",
+    "href": "presentation.html#rückegassen",
+    "title": "Licht für den Wald",
+    "section": "Rückegassen",
+    "text": "Rückegassen\n\nFigure 13: Skid trails derived from ALS data (from Lenoir et al. (2022))\nauch Polter, Hochsitze, …"
+  },
+  {
+    "objectID": "presentation.html#rückegassen-1",
+    "href": "presentation.html#rückegassen-1",
+    "title": "Licht für den Wald",
+    "section": "Rückegassen",
+    "text": "Rückegassen\n\n\n\n\n\n\nAnlegen von permanenten Rückegassen Kontrolle flächige Befahrung"
+  },
+  {
+    "objectID": "presentation.html#schadensanalyse",
+    "href": "presentation.html#schadensanalyse",
+    "title": "Licht für den Wald",
+    "section": "Schadensanalyse",
+    "text": "Schadensanalyse\nRisikomodellierung, Schadensbewertung, Aufforstungsplanung,…\n\nFigure 14: Verschneidung von ALS und kartierten Schadflächen"
+  },
+  {
+    "objectID": "presentation.html#tls---biomasse",
+    "href": "presentation.html#tls---biomasse",
+    "title": "Licht für den Wald",
+    "section": "TLS - Biomasse",
+    "text": "TLS - Biomasse\n\nFigure 15: 3D TLS data to study biodiversity of individual trees (from Calders et al. (2022))\nBiomasse mit allometrischen Funktionen wurde deutlich unterschätzt 50% der Biomasse in 7% größten Bäume"
+  },
+  {
+    "objectID": "presentation.html#tls---waldstruktur",
+    "href": "presentation.html#tls---waldstruktur",
+    "title": "Licht für den Wald",
+    "section": "TLS - Waldstruktur",
+    "text": "TLS - Waldstruktur\n\nFigure 16: Sideview of experimental site in TLS (from twitter.com/LouiseTerrynn)"
+  },
+  {
+    "objectID": "presentation.html#tlspls---plotaufnahme",
+    "href": "presentation.html#tlspls---plotaufnahme",
+    "title": "Licht für den Wald",
+    "section": "TLS/PLS - Plotaufnahme",
+    "text": "TLS/PLS - Plotaufnahme"
+  },
+  {
+    "objectID": "presentation.html#pls---poltervermessung",
+    "href": "presentation.html#pls---poltervermessung",
+    "title": "Licht für den Wald",
+    "section": "PLS - Poltervermessung",
+    "text": "PLS - Poltervermessung\n\nFigure 17: Poltervermessung mit Smartphone (from afz-derwald)"
+  },
+  {
+    "objectID": "presentation.html#sls-gedi---biomasse",
+    "href": "presentation.html#sls-gedi---biomasse",
+    "title": "Licht für den Wald",
+    "section": "SLS (GEDI) - Biomasse",
+    "text": "SLS (GEDI) - Biomasse"
+  },
+  {
+    "objectID": "presentation.html#einsatzmöglichkeiten-nw-fva",
+    "href": "presentation.html#einsatzmöglichkeiten-nw-fva",
+    "title": "Licht für den Wald",
+    "section": "Einsatzmöglichkeiten NW-FVA",
+    "text": "Einsatzmöglichkeiten NW-FVA\nBerührungspunkte zu nahezu allen Forschungs- und vielen Praxisbereichen\n\n\n\n\nWaldwachstum\n\nBaumwachstum\nBestandesstruktur\nRisikomodellierung\nIntegration Betriebsinventur\n\n\n\n\nWaldschutz\n\nWaldschadenserfassung\n\n\n\n\nWaldgenressourcen\n\nVersuchsflächenerfassung (Wachstum, Habitus)\n\n\n\n\nUmweltkontrolle\n\nLAI estimation\nHydrologische Modellierung\nWaldzustand\n\n\n\n\nWaldnaturschutz\n\nWaldstruktur/ -dynamik\nHabitatkartierung\nTotholz\n\n\n\n\ndeutlich mehr Austausch und Kooperation nötig (Sachgebiete, Abteilungen, Forschungseinrichtungen)"
+  },
+  {
+    "objectID": "presentation.html#einsatzmöglichkeiten-forstbetrieb",
+    "href": "presentation.html#einsatzmöglichkeiten-forstbetrieb",
+    "title": "Licht für den Wald",
+    "section": "Einsatzmöglichkeiten Forstbetrieb",
+    "text": "Einsatzmöglichkeiten Forstbetrieb\n\ngroßes Potenzial für die Integration von Lidar-Daten\n\nForsteinrichtung\nWaldumbauplanung\nWaldfunktionenkartierung\nAnlage permanenter Rückegassen\nStandortskartierung"
+  },
+  {
+    "objectID": "presentation.html#fazit",
+    "href": "presentation.html#fazit",
+    "title": "Licht für den Wald",
+    "section": "Fazit",
+    "text": "Fazit\n\nNutzung von Lidar im Forstbereich in Deutschland bisher völlig unterschätzt\n\n\nLidar Daten werden in Zukunft zentraler Datenbestandteil sein\n\nDatenerfassung wird billiger (Sensoren, IPhone)\nÖffentliche Daten immer mehr Open Data\ngroße Projekte zur Datenerfassung (BKG)\nDatenverarbeitung wird effizienter (AI)\nSituation erfordert neue Wege (Klimawandel, Personalmangel)\n\n\n\n\nKönnen wir Messungen im Feld jetzt einstellen?\n\nnein, (Inventurpunkte, Untersuchungsflächen,…) bleiben enorm wichtig\n\n\n\n\nWir brauchen mehr Austausch (und digitale Kompetenzen)\n\nWie viele Informatiker hat die NW-FVA eingestellt? Förster können nicht alles besseres Datenmanagement mehr Austausch"
+  },
+  {
+    "objectID": "presentation.html#gelände",
+    "href": "presentation.html#gelände",
+    "title": "Licht für den Wald",
+    "section": "Gelände",
+    "text": "Gelände"
+  },
+  {
+    "objectID": "presentation.html#tree-detection",
+    "href": "presentation.html#tree-detection",
+    "title": "Licht für den Wald",
+    "section": "Tree detection",
+    "text": "Tree detection\n\nFigure 18: Example of individual tree detection from ALS data (from www.wur.nl)"
+  },
+  {
+    "objectID": "presentation.html#pflanzegesellschaften",
+    "href": "presentation.html#pflanzegesellschaften",
+    "title": "Licht für den Wald",
+    "section": "Pflanzegesellschaften",
+    "text": "Pflanzegesellschaften\n\nFigure 19: Using Lidar to highlight legacy effects still affecting the current composition of understory plant communities and their responses to macro-environmental changes (from Lenoir et al. (2022))"
+  },
+  {
+    "objectID": "presentation.html#forst-fernerkundungs-studien-in-deutschland",
+    "href": "presentation.html#forst-fernerkundungs-studien-in-deutschland",
+    "title": "Licht für den Wald",
+    "section": "Forst-Fernerkundungs Studien in Deutschland",
+    "text": "Forst-Fernerkundungs Studien in Deutschland\n\nFigure 20: Anzahl von Studien pro Bundesland und Orte mit den meisten Studien\naus Holzwarth et al. (2020)"
+  },
+  {
+    "objectID": "presentation.html#genutzte-sensoren-in-deutschland",
+    "href": "presentation.html#genutzte-sensoren-in-deutschland",
+    "title": "Licht für den Wald",
+    "section": "Genutzte Sensoren in Deutschland",
+    "text": "Genutzte Sensoren in Deutschland\n\nFigure 21: Anzahl der Studien sortiert nach Plattform und Sensor getrennt nach Untersuchungsebene\naus Holzwarth et al. (2020)"
+  },
+  {
+    "objectID": "presentation.html#lidar-sensoren",
+    "href": "presentation.html#lidar-sensoren",
+    "title": "Licht für den Wald",
+    "section": "Lidar Sensoren",
+    "text": "Lidar Sensoren\n\nFigure 22: Comparison of lidar sensor types used in airborne systems (from Mandlburger, Lehner, and Pfeifer (2019))"
+  },
+  {
+    "objectID": "presentation.html#als-chm-vs.-image-based-chm",
+    "href": "presentation.html#als-chm-vs.-image-based-chm",
+    "title": "Licht für den Wald",
+    "section": "ALS CHM vs. image based CHM",
+    "text": "ALS CHM vs. image based CHM\n\nFigure 23: Comparison of ALS- and image-based canopy height model (from White et al. (2013))"
+  },
+  {
+    "objectID": "presentation.html#enhanced-forest-inventory",
+    "href": "presentation.html#enhanced-forest-inventory",
+    "title": "Licht für den Wald",
+    "section": "Enhanced forest inventory",
+    "text": "Enhanced forest inventory\n\nFigure 24: Enhanced forest inventory for continuous data integration"
+  },
+  {
+    "objectID": "presentation.html#terrain-produkte",
+    "href": "presentation.html#terrain-produkte",
+    "title": "Licht für den Wald",
+    "section": "Terrain Produkte",
+    "text": "Terrain Produkte\n\nFigure 25: Terrain model derived descriptors to support forest decisions (from Assmann et al. (2022))"
+  },
+  {
+    "objectID": "presentation.html#waldwachstum-2",
+    "href": "presentation.html#waldwachstum-2",
+    "title": "Licht für den Wald",
+    "section": "Waldwachstum",
+    "text": "Waldwachstum\n\nFigure 26: Approaches used to estimate past change in forest inventory attributes (from Tompalski et al. (2021))"
+  },
+  {
+    "objectID": "presentation.html#referenzen",
+    "href": "presentation.html#referenzen",
+    "title": "Licht für den Wald",
+    "section": "Referenzen",
+    "text": "Referenzen\n\n\n\n\n\n\nAlmeida, Danilo Roberti Alves de, Scott C. Stark, Gang Shao, Juliana Schietti, Bruce Walker Nelson, Carlos Alberto Silva, Eric Bastos Gorgens, Ruben Valbuena, Daniel de Almeida Papa, and Pedro Henrique Santin Brancalion. 2019. “Optimizing the Remote Detection of Tropical Rainforest Structure with Airborne Lidar: Leaf Area Profile Sensitivity to Pulse Density and Spatial Sampling.” Remote Sensing 11 (1): 92. https://doi.org/10.3390/rs11010092.\n\n\nAssmann, Jakob J., Jesper E. Moeslund, Urs A. Treier, and Signe Normand. 2022. “EcoDes-DK15: High-Resolution Ecological Descriptors of Vegetation and Terrain Derived from Denmark’s National Airborne Laser Scanning Data Set.” Earth System Science Data 14 (2): 823–44. https://doi.org/10.5194/essd-14-823-2022.\n\n\nBeland, Martin, Geoffrey Parker, Ben Sparrow, David Harding, Laura Chasmer, Stuart Phinn, Alexander Antonarakis, and Alan Strahler. 2019. “On Promoting the Use of Lidar Systems in Forest Ecosystem Research.” Forest Ecology and Management 450 (October): 117484. https://doi.org/10.1016/j.foreco.2019.117484.\n\n\nCalders, Kim, Hans Verbeeck, Andrew Burt, Niall Origo, Joanne Nightingale, Yadvinder Malhi, Phil Wilkes, Pasi Raumonen, Robert G. H. Bunce, and Mathias Disney. 2022. “Laser Scanning Reveals Potential Underestimation of Biomass Carbon in Temperate Forest.” Ecological Solutions and Evidence 3 (4). https://doi.org/10.1002/2688-8319.12197.\n\n\nCoops, Nicholas C, Piotr Tompalski, Tristan R H Goodbody, Alexis Achim, and Christopher Mulverhill. 2023. “Framework for Near Real-Time Forest Inventory Using Multi Source Remote Sensing Data.” Edited by Fabian Fassnacht. Forestry: An International Journal of Forest Research 96 (1): 1–19. https://doi.org/10.1093/forestry/cpac015.\n\n\nDavison, Sophie, Daniel N. M. Donoghue, and Nikolaos Galiatsatos. 2020. “The Effect of Leaf-on and Leaf-Off Forest Canopy Conditions on LiDAR Derived Estimations of Forest Structural Diversity.” International Journal of Applied Earth Observation and Geoinformation 92 (October): 102160. https://doi.org/10.1016/j.jag.2020.102160.\n\n\nGoodbody, Tristan R H, Nicholas C Coops, Martin Queinnec, Joanne C White, Piotr Tompalski, Andrew T Hudak, David Auty, et al. 2023. “sgsR : A Structurally Guided Sampling Toolbox for LiDAR-based Forest Inventories.” Edited by Fabian Fassnacht. Forestry: An International Journal of Forest Research, February, cpac055. https://doi.org/10.1093/forestry/cpac055.\n\n\nGuo, Qinghua, Xinlian Liang, Wenkai Li, Shichao Jin, Hongcan Guan, Kai Cheng, Yanjun Su, and Shengli Tao. 2022. “LiDAR Remote Sensing of Forest Ecosystems: Applications and Prospects.” In New Thinking in GIScience, edited by Bin Li, Xun Shi, A-Xing Zhu, Cuizhen Wang, and Hui Lin, 221–31. Singapore: Springer Nature Singapore. https://doi.org/10.1007/978-981-19-3816-0_24.\n\n\nHeinaro, Einari, Topi Tanhuanpää, Tuomas Yrttimaa, Markus Holopainen, and Mikko Vastaranta. 2021. “Airborne Laser Scanning Reveals Large Tree Trunks on Forest Floor.” Forest Ecology and Management 491 (July): 119225. https://doi.org/10.1016/j.foreco.2021.119225.\n\n\nHolzwarth, Stefanie, Frank Thonfeld, Sahra Abdullahi, Sarah Asam, Emmanuel Da Ponte Canova, Ursula Gessner, Juliane Huth, Tanja Kraus, Benjamin Leutner, and Claudia Kuenzer. 2020. “Earth Observation Based Monitoring of Forests in Germany: A Review.” Remote Sensing 12 (21): 3570. https://doi.org/10.3390/rs12213570.\n\n\nJarron, Lukas R., Nicholas C. Coops, William H. MacKenzie, Piotr Tompalski, and Pamela Dykstra. 2020. “Detection of Sub-Canopy Forest Structure Using Airborne LiDAR.” Remote Sensing of Environment 244 (July): 111770. https://doi.org/10.1016/j.rse.2020.111770.\n\n\nJucker, Tommaso, John Caspersen, Jérôme Chave, Cécile Antin, Nicolas Barbier, Frans Bongers, Michele Dalponte, et al. 2017. “Allometric Equations for Integrating Remote Sensing Imagery into Forest Monitoring Programmes.” Global Change Biology 23 (1): 177–90. https://doi.org/10.1111/gcb.13388.\n\n\nLenoir, Jonathan, Eva Gril, Sylvie Durrieu, Hélène Horen, Marianne Laslier, Jonas J. Lembrechts, Florian Zellweger, et al. 2022. “Unveil the Unseen: Using LiDAR to Capture Time-Lag Dynamics in the Herbaceous Layer of European Temperate Forests.” Journal of Ecology 110 (2): 282–300. https://doi.org/10.1111/1365-2745.13837.\n\n\nLevick, Shaun R., Dominik Hessenmöller, and E-Detlef Schulze. 2016. “Scaling Wood Volume Estimates from Inventory Plots to Landscapes with Airborne LiDAR in Temperate Deciduous Forest.” Carbon Balance and Management 11 (1): 7. https://doi.org/10.1186/s13021-016-0048-7.\n\n\nLines, Emily Rebecca, Fabian Jörg Fischer, Harry Jon Foord Owen, and Tommaso Jucker. 2022. “The Shape of Trees: Reimagining Forest Ecology in Three Dimensions with Remote Sensing.” Journal of Ecology 110 (8): 1730–45. https://doi.org/10.1111/1365-2745.13944.\n\n\nMandlburger, G., H. Lehner, and N. Pfeifer. 2019. “A COMPARISON OF SINGLE PHOTON AND FULL WAVEFORM LIDAR.” ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences IV-2/W5 (May): 397–404. https://doi.org/10.5194/isprs-annals-IV-2-W5-397-2019.\n\n\nMoudrý, Vítězslav, Anna F. Cord, Lukáš Gábor, Gaia Vaglio Laurin, Vojtěch Barták, Kateřina Gdulová, Marco Malavasi, et al. 2023. “Vegetation Structure Derived from Airborne Laser Scanning to Assess Species Distribution and Habitat Suitability: The Way Forward.” Diversity and Distributions 29 (1): 39–50. https://doi.org/10.1111/ddi.13644.\n\n\nNowak, Maciej M., Katarzyna Pędziwiatr, and Paweł Bogawski. 2022. “Hidden Gaps Under the Canopy: LiDAR-based Detection and Quantification of Porosity in Tree Belts.” Ecological Indicators 142 (September): 109243. https://doi.org/10.1016/j.ecolind.2022.109243.\n\n\nRocha, Kleydson Diego, Carlos Alberto Silva, Diogo N. Cosenza, Midhun Mohan, Carine Klauberg, Monique Bohora Schlickmann, Jinyi Xia, et al. 2023. “Crown-Level Structure and Fuel Load Characterization from Airborne and Terrestrial Laser Scanning in a Longleaf Pine (Pinus Palustris Mill.) Forest Ecosystem.” Remote Sensing 15 (4): 1002. https://doi.org/10.3390/rs15041002.\n\n\nTompalski, Piotr, Nicholas C. Coops, Joanne C. White, Tristan R. H. Goodbody, Chris R. Hennigar, Michael A. Wulder, Jarosław Socha, and Murray E. Woods. 2021. “Estimating Changes in Forest Attributes and Enhancing Growth Projections: A Review of Existing Approaches and Future Directions Using Airborne 3D Point Cloud Data.” Current Forestry Reports 7 (1): 1–24. https://doi.org/10.1007/s40725-021-00135-w.\n\n\nWeiser, Hannah, Jannika Schäfer, Lukas Winiwarter, Nina Krašovec, Fabian E. Fassnacht, and Bernhard Höfle. 2022. “Individual Tree Point Clouds and Tree Measurements from Multi-Platform Laser Scanning in German Forests.” Earth System Science Data 14 (7): 2989–3012. https://doi.org/10.5194/essd-14-2989-2022.\n\n\nWhite, Joanne, Michael Wulder, Mikko Vastaranta, Nicholas Coops, Doug Pitt, and Murray Woods. 2013. “The Utility of Image-Based Point Clouds for Forest Inventory: A Comparison with Airborne Laser Scanning.” Forests 4 (3): 518–36. https://doi.org/10.3390/f4030518."
+  }
+]

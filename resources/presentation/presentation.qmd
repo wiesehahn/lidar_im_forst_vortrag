@@ -1,0 +1,914 @@
+---
+title: "Licht für den Wald"
+subtitle: "Anwendungsmöglichkeiten von Lidar im Forstbereich"
+author: "Jens Wiesehahn"
+
+format:
+  revealjs:
+    width: 1600
+    height: 1200
+    margin: 0.1
+    #smaller: true
+    title-slide-attributes:
+      data-background-image: https://cdnb.artstation.com/p/assets/images/images/024/582/363/large/rainbow-t-20190102-laser-forest2.jpg?1582880467
+      data-background-size: cover
+      data-background-opacity: "1"
+    slide-number: c/t
+    transition: slide
+    background-transition: fade
+    preview-links: false #true
+    preload-iframes: false # true
+    # multiplex: true
+    # embed-resources: true
+    theme: [default, custom.scss]
+    navigation-mode: vertical
+    tbl-cap-location: bottom
+    chalkboard: true
+    #logo: https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png
+
+revealjs-plugins:
+  - verticator
+  - attribution
+
+bibliography: ../references.bib
+---
+
+# Einordnung
+
+<br>
+
+. . .
+
+> Recent advances in remote sensing and data processing are revolutionising our ability to accurately measure tree and forest structure from leaves to landscapes. [@linesShapeTreesReimagining2022]
+
+<br>
+
+. . .
+
+> Over the last 20+ years, lidar technology has fundamentally changed the way we observe and describe forest structure, and it will continue to impact the ways in which we investigate
+and monitor the relations between forest structure and functions.
+[@belandPromotingUseLidar2019]
+
+::: {.notes}
+Probleme:
+
+- Klimawandel
+- Peronalmangel
+- weiterhin große Anforderungen an den Wald 
+:::
+
+
+# Das Funktionsprinzip
+
+::: {.notes}
+Frage: Wer kennt sich wie gut mit Lidar aus?
+
+  - gar nicht
+  - ein wenig
+  - ziemlich gut
+:::
+
+
+## Funktionsweise
+
+Lidar - Light Detection and Ranging
+
+
+::: {.r-stack}
+![](https://thumbs.gfycat.com/SpiffyEquatorialArkshell.webp){width=1200}
+
+![](https://j.gifs.com/Kzq8YE.gif){.fragment width=1200 fragment-index=1}
+
+![](https://i.ytimg.com/vi/uSESVm59uDQ/maxresdefault.jpg){.fragment width=1200 fragment-index=2}
+
+![](https://thumbs.gfycat.com/MiserlyQuarrelsomeAegeancat.webp){.fragment width=1200 fragment-index=3}
+
+
+![](https://thumbs.gfycat.com/QuerulousDimpledIndianglassfish.webp){.fragment width=1200 fragment-index=4}
+:::
+
+::: {.notes}
+- Aktives System (Nahes Infrarot - 1064nm Wellenlänge)
+- 2 MHz
+- Licht besteht aus Photonen 
+- es wird detektiert wann wieviele refkleftiert werden
+- viele Returns messbar
+:::
+
+
+## Plattformen
+
+<br>
+
+::: {layout="[[60,40]]"}
+
+![](https://media.springernature.com/lw685/springer-static/image/chp%3A10.1007%2F978-981-19-3816-0_24/MediaObjects/530952_1_En_24_Fig1_HTML.png)
+
+- Spaceborne laser scanning 
+  (SLS) - global
+- Airborne laser scanning (ALS) - 10-1000 km²
+- Unmanned aerial vehicle laser scanning (ULS) - 0.02-10 km²
+- Mobile laser scanning (MLS) - 5-100 ha
+- Personal laser scanning (PLS) - 0.25-5 ha
+- Terrestrial laser scanning (TLS) - 0.01-1 ha
+
+:::
+
+::: {.attribution}
+aus [@guoLiDARRemoteSensing2022]
+:::
+
+
+# Die Datenverfügbarkeit
+
+## Europa 
+
+<br>
+
+**Länder in Europa mit ALS Daten als Open Data:**
+
+ ([Austria](https://data.bev.gv.at/)) ,
+ [Belgium](https://remotesensing.vlaanderen.be/apps/openlidar/) ,
+ [Denmark](https://download.kortforsyningen.dk/content/) ,
+ [England](https://environment.data.gov.uk/DefraDataDownload/?Mode=survey) ,
+ [Estonia](https://geoportaal.maaamet.ee/eng/Spatial-Data/Elevation-data-p308.html) ,
+ [Finland](https://www.maanmittauslaitos.fi/en/e-services/open-data-file-download-service) ,
+ [France](https://geoservices.ign.fr/lidarhd) ,
+ ([Ireland](https://data.gov.ie/dataset/open-topographic-lidar-data)) ,
+ [Italy](http://www.pcn.minambiente.it/mattm/en/online-the-new-procedure-for-the-request-of-lidar-data-and_or-interferometric-ps/) ,
+ [Latvia](https://www.lgia.gov.lv/en/Digit%C4%81lais%20virsmas%20modelis) ,
+ [Luxembourg](https://data.public.lu/fr/datasets/lidar-2019-releve-3d-du-territoire-luxembourgeois/) ,
+ [Netherlands](https://www.pdok.nl/) ,
+ [Norway](https://hoydedata.no/LaserInnsyn/) ,
+ [Poland](https://mapy.geoportal.gov.pl/imap/Imgp_2.html) ,
+ [Portugal](https://geocatalogo.icnf.pt/geovisualizador/agil.html) ,
+ [Scotland](https://remotesensingdata.gov.scot/data#/list) ,
+ [Slovakia](https://zbgis.skgeodesy.sk/mkzbgis/en/teren?) ,
+ [Slovenia](http://www.geoportal.gov.si/eng/viewers/) ,
+ [Spain](http://centrodedescargas.cnig.es/CentroDescargas/index.jsp) ,
+ [Catalonia (Spain)](http://www.icgc.cat/en/Downloads/Elevations) ,
+ [Sweden](https://www.lantmateriet.se/en/) ,
+ [Switzerland](https://www.swisstopo.admin.ch/en/geodata/height/surface3d.html) ,
+ ([Wales](https://lle.gov.wales/GridProducts#data=LidarCompositeDataset))
+
+aus @moudryVegetationStructureDerived2023
+
+<br>
+
+-> Die meisten Europäischen Länder stellen die Daten kostenfrei zur Verfügung
+
+
+## Deutschland
+
+<br>
+
+**Bundesländer mit ALS Daten als Open Data:**
+
+(Bayern), Berlin, Brandenburg, Hessen, Nordrhein-Westfalen, (Sachsen-Anhalt), Sachsen, Thüringen
+
+Tabelle unter [gist.github.com/wiesehahn](https://gist.github.com/wiesehahn/6b6c215c227341f4faab03ff96fa7f1b)
+
+<br>
+
+-> In Deutschland bisher sehr unterschiedliche Verfügbarkeiten (Datenformat, Kosten, etc.)
+
+
+## Niedersachsen
+
+<br>
+
+**Die Daten sind kostenpflichtig, aber für NW-FVA über Kooperationsvertrag nutzbar**
+
+- Die Daten haben eine Punktdichte von >= 4 Punkte pro m²
+- Flächige Abdeckung mit Daten von ~ 2013-2020
+- Daten außerhalb der Vegetationszeit
+- 2023 evtl. Daten aus Eigenbefliegung für den Solling
+
+<br>
+
+-> Daten in Niedersachsen recht heterogen, trotzdem nutzbar
+
+
+## Niedersachsen {transition="fade" transition-speed="fast"}
+
+::: {#fig-als-lower-saxony-year}
+![](https://raw.githubusercontent.com/wiesehahn/lidar_exploration/master/results/figures/data_year.png)
+
+Verfügbarkeit von ALS Daten in Niedersachsen nach Aufnahmejahr
+:::
+
+
+## ALS Datenverfügbarkeit Niedersachsen {transition="fade" transition-speed="fast"}
+
+::: {#fig-als-lower-saxony-month}
+![](https://raw.githubusercontent.com/wiesehahn/lidar_exploration/master/results/figures/data_month.png)
+
+Verfügbarkeit von ALS Daten in Niedersachsen nach Aufnahmemonat
+:::
+
+
+## Digitaler Zwilling Deutschland
+
+**Projekt für eine bundesweite Lidar-Erfassung**
+
+::: {.r-stack}
+![](https://pbs.twimg.com/media/FPFgPLvXsAMIyNZ.jpg){.fragment .fade-out fragment-index=1}
+
+- Befliegung ab 2023(?)
+- Datenverfügbarkeit ab ?
+- Wiederholung alle 3 Jahre geplant(?), vorerst 2x 
+- Befliegung März bis Oktober (Vegetationszeit)
+- ca. >=40 Punkte (Pulses) pro m²
+- Single Photon Lidar (anderes Sensorprinzip)
+- Daten nicht frei zugänglich
+- primär für Bundesbehörden gedacht
+:::
+
+
+# Die Daten
+
+## Punktwolke
+
+XYZ-Koordinaten - als Textdatei / LAS / LAZ / COPC
+
+![](../resources/figures/punktwolke.png)
+
+::: {.notes}
+- große Datenmengen
+- 1km² Ausschnitt Rheinhausen > 41 Mio. Punkte (~2GB als LAS)
+:::
+
+## Attribute -XYZ
+
+![](../resources/figures/rheinhausen_points_z.jpeg){width=800}
+![](../resources/figures/rheinhausen_points_z_sideview.jpeg){width=800}
+
+::: {.notes}
+- extrem genaue Lage der Punkte
+:::
+
+## Attribute -Number of Returns {transition="fade" transition-speed="fast"}
+
+![](../resources/figures/rheinhausen_points_numberofreturns.jpeg){width=800}
+![](../resources/figures/rheinhausen_points_numberofreturns_sideview.jpeg){width=800}
+
+::: {.notes}
+~ Schichigkeit
+:::
+
+## Attribute -Return Number {transition="fade" transition-speed="fast"}
+
+![](../resources/figures/rheinhausen_points_returnnumber.jpeg){width=800}
+![](../resources/figures/rheinhausen_points_returnnumber_sideview.jpeg){width=800}
+
+## Attribute -Intensity {transition="fade" transition-speed="fast"}
+
+![](../resources/figures/rheinhausen_points_intensity.jpeg){width=800}
+![](../resources/figures/rheinhausen_points_intensity_sideview.jpeg){width=800}
+
+::: {.notes}
+Anteil Relektierter Photonen
+~ Oberflächenbeschaffenheit
+:::
+
+
+## abgeleitete Standardprodukte
+
+<br>
+
+Punkte werden reduziert auf Oberfläche / Gelände
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+**Gelände** 
+
+= Digitales Geländemodell (DGM) 
+
+= Digital Terrain Model (DTM)
+
+<br>
+
+
+**Oberfläche** 
+
+= Digitales Oberflächenmodell (DOM) 
+
+= Digital Surface Model (DSM)
+
+<br>
+
+**normalisierte Oberfläche**
+
+= normalisiertes Oberfllächenmodell (nDOM)
+
+= normalized Surface Model (nDSM)
+
+= Canopy Height Model (CHM)
+:::
+
+::: {.column width="50%"}
+![](https://www.spiedigitallibrary.org/ContentImages/Journals/JARSC4/10/3/036013/FigureImages/JARS_10_3_036013_f003.png)
+:::
+
+::::
+
+
+::: {.notes}
+- umwandlung von Punkten in Raster / Mesh
+:::
+
+
+
+## abgeleitete Standardprodukte {transition="fade" transition-speed="fast"}
+
+<br>
+
+::: {.r-stack}
+![](../resources/figures/rheinhausen_dtm.jpeg){width=1000}
+
+![](../resources/figures/rheinhausen_dsm.jpeg){.fragment width=1000 fragment-index=1}
+
+![](../resources/figures/rheinhausen_chm.jpeg){.fragment width=1000 fragment-index=2}
+:::
+
+
+
+
+## beyond Standardprodukte
+
+::: {.r-stack}
+![](../resources/figures/rheinhausen_dtm_hillshade2.jpeg){.fragment width=1200 fragment-index=0}
+
+![](../resources/figures/rheinhausen_low-vegetation.jpeg){.fragment width=1200 fragment-index=1}
+
+![](../resources/figures/rheinhausen_intensity-lower.jpeg){.fragment width=1200 fragment-index=2}
+
+![](../resources/figures/rheinhausen_intensity-upper.jpeg){.fragment width=1200 fragment-index=3}
+
+![](../resources/figures/rheinhausen_ortho.jpeg){.fragment width=1200 fragment-index=4}
+
+:::
+
+
+## Punktbasierte Analysen
+
+::: {.r-stack}
+
+![](../resources/figures/baum_schillerwiesen_chm.jpeg){.fragment .fade-out}
+
+![](../resources/figures/baum_schillerwiesen.gif){.fragment}
+
+:::
+
+
+::: {.notes}
+in den Daten steckt mehr
+:::
+
+
+## Punktbasierte Analysen {transition="fade" transition-speed="fast"}
+
+::: {.r-stack}
+
+![](../resources/figures/plot_raw.png)
+
+![](../resources/figures/plot_linear_horizontal.png){.fragment}
+
+![](../resources/figures/plot_linear_vertical.png){.fragment}
+
+![](../resources/figures/hochsitz.gif){.fragment}
+
+:::
+
+
+# Anwendungen im Wald
+
+## Publikationen
+
+::: {#fig-publications-year}
+![](https://user-images.githubusercontent.com/41429613/223417924-19d3abe2-b344-4a10-9150-49691f1a0717.png)
+
+Number of publications by year for *(lidar OR laser) AND (forestry OR forest OR tree)* (from [dimensions.ai](https://app.dimensions.ai/analytics/publication/overview/timeline?search_mode=content&search_text=(lidar%20OR%20laser)%20AND%20(forestry%20OR%20forest%20OR%20tree)&search_type=kws&search_field=text_search))
+:::
+
+<br>
+
+. . .
+
+19 der 20 meistzitierten Wisschenschaftler kommen aus Skandinavien oder Nordamerika
+
+::: {.notes}
+Erfassung recht schnell rentabel in Remote-areas
+
+In Deutschland bisher kaum genutzt
+    - optische Daten (Luftbilder, Satellitendaten) haben Tradition
+    - im Vergleich zu nordischen Wäldern sind Wälder in Deutschland gut erreichbar, kleinräumig gemanagt und strukturreicher
+    - Lidar-Daten sind (waren) recht teuer
+lässt sich u.A. durch die schlechte Datenverfügbarkeit erklären
+auch Digitalisierungswille
+:::
+
+
+
+
+## Waldstruktur
+
+::: {#fig-forest-structure}
+![](https://onlinelibrary.wiley.com/cms/asset/a1635e91-2b86-4c09-8fdd-e7a43ee1ca9a/ddi13644-fig-0001-m.jpg)
+
+Variables to describe the vertical structure of the vegetation (from @moudryVegetationStructureDerived2023)
+:::
+
+::: aside
+e.g. @moudryVegetationStructureDerived2023, @belandPromotingUseLidar2019, @davisonEffectLeafonLeafoff2020, @linesShapeTreesReimagining2022, @rochaCrownLevelStructureFuel2023, @nowakHiddenGapsCanopy2022, @jarronDetectionSubcanopyForest2020
+:::
+
+::: {.notes}
+Kronenlücken
+genutzt für Habitatkartierungen
+in Korrelation mit Biodiversität
+Waldrandstruktur (WSL)
+:::
+
+## Kronenlücken
+
+::: {#fig-canopy-gaps}
+![](https://raw.githubusercontent.com/carlos-alberto-silva/ForestGapR/master/readme/fig_4.png)
+
+Forest Gap Change Detection (from https://github.com/carlos-alberto-silva/ForestGapR)
+:::
+
+## Umweltmonitoring
+
+![](../resources/figures/versuchsflaeche_goettingen_topview.jpg)
+
+![](../resources/figures/versuchsflaeche_goettingen_sideview.jpg)
+
+![](https://www.researchgate.net/profile/Danilo-Almeida/publication/330203798/figure/fig4/AS:712488966447105@1546882015531/LAD-Leaf-Area-Density-profile-and-LAI-Leaf-Area-Index-calculation-Gray-voxels.ppm) LAD/ LAI
+
+::: {.attribution}
+from @almeidaOptimizingRemoteDetection2019
+:::
+
+
+::: {.notes}
+Leaf-area Density / LAI
+Interzeption
+Streufall
+:::
+
+
+
+## Stichprobeninventuren 
+
+![](https://essd.copernicus.org/articles/14/2989/2022/essd-14-2989-2022-f01-web.png)
+
+::: {.attribution}
+aus @weiserIndividualTreePoint2022
+:::
+
+::: {.notes}
+Zum Upscaling von Stichprobeninventuren
+Inventurpunkte können auch mit ALS Referenziert werden 
+:::
+
+## Stichprobeninventuren  {transition="fade" transition-speed="fast"}
+
+für ein stratifiziertes Sampling neuer oder ergänzender Stichprobenpunkte
+
+![](https://pbs.twimg.com/media/FUHUUXZVEAAvCNh.jpg)
+
+::: {.attribution}
+aus [@goodbodySgsRStructurallyGuided2023]
+:::
+
+::: {.notes}
+Zum stratifizierten Sampling der Stichproben
+:::
+
+
+## Stichprobeninventuren  {transition="fade" transition-speed="fast"}
+
+![](https://www.researchgate.net/profile/Vladimir-Usoltsev-2/publication/304990965/figure/fig6/AS:391049865383936@1470244961167/Schematic-diagram-illustrating-how-airborne-laser-scanning-ALS-imagery-can-be_W640.jpg)
+
+::: {.attribution}
+aus @juckerAllometricEquationsIntegrating2017
+:::
+
+::: {.notes}
+Baumhöhe kann ähnlich genau gemessen werden wie im Feld
+:::
+
+
+## Biomasse Modellierung
+::: {#fig-biomass-als}
+![](https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs13021-016-0048-7/MediaObjects/13021_2016_48_Fig5_HTML.gif?as=webp)
+
+Landscape scale extrapolation of wood volume (from @levickScalingWoodVolume2016)
+:::
+
+
+## Waldwachstum
+
+::: {#fig-tree-growth1}
+![](https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs40725-021-00139-6/MediaObjects/40725_2021_139_Fig1_HTML.png?as=webp)
+
+Approaches used to characterize change in forest attributes (from @tompalskiEstimatingChangesForest2021)
+:::
+
+::: {.notes}
+- mit mehreren Aufnahmen lässt sich Wachstum ableiten
+- Retrospektiv basierend auf Punkten, Area-based oder auf Einzelbaumebene
+- direkt ~(P2-P1), indirekt ~P2 - ~P1  
+- Integration in Waldwachstumsmodelle
+- Ableitung von Wachstumsfunktionen
+:::
+
+
+## Multitemporales Beispiel
+
+::: {.r-stack}
+![](../resources/figures/chm_2017.jpeg){.fragment width=1200 fragment-index=0}
+
+![](../resources/figures/chm_2020.jpeg){.fragment width=1200 fragment-index=1}
+
+![](../resources/figures/chm_2017-chm_2020.jpeg){.fragment width=1200 fragment-index=2}
+
+![](../resources/figures/chm_2017-chm_2020_detail.jpeg){.fragment width=1200 fragment-index=3}
+:::
+
+::: {.notes}
+z.B. Veränderung der Bestandesstruktur in Naturwäldern
+
+:::
+
+
+## Bestandesinventur
+::: {#fig-nrt-inventory}
+![](../resources/figures/nrt_inventory.jpeg)
+
+Concept of updated forest inventory  (from @coopsFrameworkRealtimeForest2023)
+:::
+
+::: {.notes}
+Forsteinrichtung 
+- zur Unterstützung (Struktur, Höhen Bestandesabgrenzungen,...)
+- neue Konzepte für kontnuierliche Informationen
+:::
+
+## Totholz
+
+::: {#fig-cwd}
+![](https://ars.els-cdn.com/content/image/1-s2.0-S0378112721003133-ga1_lrg.jpg)
+
+Graphical abstract of tree trunk detection with ALS data (from @heinaroAirborneLaserScanning2021)
+:::
+
+::: {.notes}
+auch stehendes Totholz
+:::
+
+
+
+## Geomorphologie
+
+::: {#fig-geomorphometry}
+![](https://www.whiteboxgeo.com/manual/wbt_book/img/multiscale_unsphericity_scale_mosaic.png)
+
+Multiscale unsphericity curvature calculated from DTM as geomorphometric terrain index.
+:::
+
+::: {.notes}
+Lehre von den Formen der Erdoberfläche
+- Neigung
+- Ausrichtung
+- Standortanalyse
+- Bruchwälder, Blockschutthalden
+- Befahrbarkeit
+:::
+
+
+## Hydrologie
+
+::: {#fig-hydrology1}
+![](https://flf.julius-kuehn.de/images/10-twi.jpg)
+
+Topographischer Feuchteindex (von [julius-kuehn.de](https://flf.julius-kuehn.de/webdienste/webdienste-des-flf/topographischer-feuchteindex.html))
+:::
+
+::: {.notes}
+Standortanalyse
+Bruchwälder, Blockschutthalden
+:::
+
+
+## Hydrologie
+
+::: {#fig-hydrology2}
+![](https://media.githubusercontent.com/media/baharmon/baharmon.github.io/master/images/governors-island/discharge.gif)
+
+Simulation des oberflächennaheeen Waserflusses (from [baharmon.github.io](https://baharmon.github.io/hydrology-in-grass))
+:::
+
+::: {.notes}
+Bodenerosion
+Wegebau / Instandhaltung
+:::
+
+
+## Rückegassen
+
+::: {#fig-skid-trails}
+![](https://besjournals.onlinelibrary.wiley.com/cms/asset/7a8b8ba0-4edf-41b3-96ae-a26d600e82fb/jec13837-fig-0005-m.jpg)
+
+Skid trails derived from ALS data (from @lenoirUnveilUnseenUsing2022)
+:::
+
+::: {.notes}
+auch Polter, Hochsitze, ...
+:::
+
+
+
+## Rückegassen {transition="fade" transition-speed="fast"}
+
+::: {.r-stack}
+![](../resources/figures/dtm_2017_hillshade.jpeg){width=1200}
+
+![](../resources/figures/dtm_2020_hillshade.jpeg){.fragment width=1200 fragment-index=1}
+
+![](../resources/figures/dtm_2017-dtm_2020_detail_hillshade.jpeg){.fragment width=1200 fragment-index=2}
+:::
+
+::: {.notes}
+Anlegen von permanenten Rückegassen
+Kontrolle flächige Befahrung
+:::
+
+## Schadensanalyse
+
+Risikomodellierung, Schadensbewertung, Aufforstungsplanung,...
+
+::: {#fig-friederike}
+![](../resources/figures/friederike.png)
+
+Verschneidung von ALS und kartierten Schadflächen
+:::
+
+
+## TLS - Biomasse
+::: {#fig-biomass-tls}
+![](https://besjournals.onlinelibrary.wiley.com/cms/asset/851ebcf4-37ce-4a39-adaf-7de29f23ea89/eso312197-gra-0001-m.jpg?trick=1678577274747)
+
+3D TLS data to study biodiversity of individual trees (from @caldersLaserScanningReveals2022)
+:::
+
+::: {.notes}
+Biomasse mit allometrischen Funktionen wurde deutlich unterschätzt
+50% der Biomasse in 7% größten Bäume
+:::
+
+
+## TLS - Waldstruktur {visibility="uncounted"}
+
+::: {#fig-tls-sideview}
+![](../resources/figures/versuchsflaeche-tls.jpg)
+
+Sideview of experimental site in TLS (from [twitter.com/LouiseTerrynn](https://twitter.com/LouiseTerrynn/status/1636360143519764482))
+:::
+
+
+## TLS/PLS - Plotaufnahme {visibility="uncounted"}
+
+{{< tweet daniel_kuken 1567048922211778560 >}}
+
+
+## PLS - Poltervermessung {visibility="uncounted"}
+
+::: {#fig-polter}
+![](https://www.digitalmagazin.de/heftbilder/afz-derwald/afz-der-wald-2022-19/155356/image-thumb__155356__content/3-polter.jpg?t=1663860063)
+
+Poltervermessung mit Smartphone (from [afz-derwald](https://www.digitalmagazin.de/marken/afz-derwald/hauptheft/2022-19/forstbetrieb/012_forstliche-verfahrenstechnik-wo-stehen-wir-wo-geht-die-reise-hin))
+:::
+
+
+
+## SLS (GEDI) - Biomasse {visibility="uncounted"}
+
+:::: {.r-stack}
+![](https://goetzlab.rc.nau.edu/wp-content/uploads/2018/10/gedi_vertical.png){.fragment .fade-out}
+
+![](https://gedi.umd.edu/wp-content/uploads/2018/04/waveform_diag_25m-1024x616.png){.fragment .fade-in-then-out}
+
+![](https://daac-news.ornl.gov/sites/default/files/2021-08/GEDI_L4A_AGB_Density_Fig1.png){.fragment}
+::::
+
+# Zusammenfassung
+
+
+## Einsatzmöglichkeiten NW-FVA
+
+Berührungspunkte zu nahezu allen Forschungs- und vielen Praxisbereichen
+
+<br>
+
+:::: {.r-stack}
+
+::: {.fragment .fade-in-then-out}
+#### Waldwachstum
+
+- Baumwachstum
+- Bestandesstruktur
+- Risikomodellierung
+- Integration Betriebsinventur
+:::
+
+::: {.fragment .fade-in-then-out}
+#### Waldschutz
+- Waldschadenserfassung
+:::
+
+::: {.fragment .fade-in-then-out}
+#### Waldgenressourcen
+
+- Versuchsflächenerfassung (Wachstum, Habitus)
+:::
+
+::: {.fragment .fade-in-then-out}
+#### Umweltkontrolle
+
+- LAI estimation
+- Hydrologische Modellierung
+- Waldzustand
+:::
+
+::: {.fragment .fade-in}
+#### Waldnaturschutz
+
+- Waldstruktur/ -dynamik
+- Habitatkartierung
+- Totholz
+:::
+
+::::
+
+::: {.notes}
+deutlich mehr Austausch und Kooperation nötig 
+(Sachgebiete, Abteilungen, Forschungseinrichtungen)
+:::
+
+## Einsatzmöglichkeiten Forstbetrieb
+
+<br>
+
+großes Potenzial für die Integration von Lidar-Daten
+
+- Forsteinrichtung
+- Waldumbauplanung
+- Waldfunktionenkartierung
+- Anlage permanenter Rückegassen
+- Standortskartierung
+
+
+## Fazit
+
+<br>
+
+**Nutzung von Lidar im Forstbereich in Deutschland bisher völlig unterschätzt**
+
+<br>
+
+. . .
+
+**Lidar Daten werden in Zukunft zentraler Datenbestandteil sein**
+
+- Datenerfassung wird billiger (Sensoren, IPhone)
+- Öffentliche Daten immer mehr Open Data
+- große Projekte zur Datenerfassung (BKG)
+- Datenverarbeitung wird effizienter (AI)
+- Situation erfordert neue Wege (Klimawandel, Personalmangel)
+
+<br>
+
+. . .
+
+**Können wir Messungen im Feld jetzt einstellen?**
+
+- nein, (Inventurpunkte, Untersuchungsflächen,...) bleiben enorm wichtig
+
+<br>
+
+. . .
+
+**Wir brauchen mehr Austausch (und digitale Kompetenzen)**
+
+
+::: {.notes}
+Wie viele Informatiker hat die NW-FVA eingestellt?
+Förster können nicht alles
+besseres Datenmanagement
+mehr Austausch
+:::
+
+
+# Appendix {visibility="uncounted"}
+
+## Gelände {visibility="uncounted"}
+
+![](https://www.sigarch.org/wp-content/uploads/2021/01/AdobeStock_373086090-980x327.jpeg)
+
+![](https://t4.ftcdn.net/jpg/03/31/80/07/360_F_331800748_JzgCt76ZwNcuAmiqSVRtnzeNeMUnCMdL.jpg)
+
+## Tree detection {visibility="uncounted"}
+
+::: {#fig-itd}
+![](https://www.wur.nl/upload_mm/7/b/4/40eea042-6806-4bd0-956d-b3650e1139f1_Thesis_Thijs_Koop_61d3acb1_750x400.png)
+
+Example of individual tree detection from ALS data (from [www.wur.nl](https://www.wur.nl/en/show/Counting-trees-in-Dutch-forests-Using-AHN-LiDAR-data-for-National-Forest-Inventory-1.html))
+:::
+
+
+## Pflanzegesellschaften {visibility="uncounted"}
+
+::: {#fig-biodiversity}
+![](https://besjournals.onlinelibrary.wiley.com/cms/asset/16b9d7f7-eb29-4427-9851-342bee37f1ec/jec13837-toc-0001-m.jpg?trick=1670843457369)
+
+Using Lidar to highlight legacy effects still affecting the current composition of understory plant communities and their responses to macro-environmental changes (from @lenoirUnveilUnseenUsing2022)
+:::
+
+
+## Forst-Fernerkundungs Studien in Deutschland {visibility="uncounted"}
+
+::: {#fig-studies-by-state}
+![](https://www.mdpi.com/remotesensing/remotesensing-12-03570/article_deploy/html/images/remotesensing-12-03570-g009.png)
+
+Anzahl von Studien pro Bundesland und Orte mit den meisten Studien
+:::
+
+::: {.attribution}
+aus @holzwarthEarthObservationBased2020
+:::
+
+
+## Genutzte Sensoren in Deutschland {visibility="uncounted"}
+
+::: {#fig-studies-by-sensor}
+![](https://www.mdpi.com/remotesensing/remotesensing-12-03570/article_deploy/html/images/remotesensing-12-03570-g011.png)
+
+Anzahl der Studien sortiert nach Plattform und Sensor getrennt nach Untersuchungsebene
+:::
+
+::: {.attribution}
+aus @holzwarthEarthObservationBased2020
+:::
+
+
+## Lidar Sensoren {visibility="uncounted"}
+
+::: {#fig-sensor-types}
+![](https://d3i71xaburhd42.cloudfront.net/44269dd30a6c813e78174c421c97157f486a8c52/2-Figure1-1.png)
+
+Comparison of lidar sensor types used in airborne systems (from @mandlburgerCOMPARISONSINGLEPHOTON2019)
+:::
+
+
+## ALS CHM vs. image based CHM {visibility="uncounted"}
+
+::: {#fig-photogrammetry-comparison}
+![](https://pub.mdpi-res.com/forests/forests-04-00518/article_deploy/html/images/forests-04-00518-ag.png?1580953800)
+
+Comparison of ALS- and image-based canopy height model (from @whiteUtilityImageBasedPoint2013)
+:::
+
+
+## Enhanced forest inventory {visibility="uncounted"}
+
+::: {#fig-intention-efi}
+![](https://user-images.githubusercontent.com/41429613/216407821-d0036b6c-4467-4826-8d4a-e74bc6fd5269.png)
+
+Enhanced forest inventory for continuous data integration
+:::
+
+
+## Terrain Produkte {visibility="uncounted"}
+
+::: {#fig-intention-baselayers}
+![](https://essd.copernicus.org/articles/14/823/2022/essd-14-823-2022-f02-web.png)
+
+Terrain model derived descriptors to support forest decisions (from @assmannEcoDesDK15HighresolutionEcological2022)
+:::
+
+
+## Waldwachstum {visibility="uncounted"}
+::: {#fig-tree-growth2}
+![](https://media.springernature.com/full/springer-static/image/art%3A10.1007%2Fs40725-021-00139-6/MediaObjects/40725_2021_139_Fig2_HTML.png?as=webp)
+
+Approaches used to estimate past change in forest inventory attributes (from @tompalskiEstimatingChangesForest2021)
+:::
+
+
+## Referenzen {visibility="uncounted"}
