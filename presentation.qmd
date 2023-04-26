@@ -660,7 +660,7 @@ Verschneidung von ALS und kartierten Schadflächen
 ::: {#fig-biomass-tls}
 ![](https://besjournals.onlinelibrary.wiley.com/cms/asset/851ebcf4-37ce-4a39-adaf-7de29f23ea89/eso312197-gra-0001-m.jpg?trick=1678577274747)
 
-3D TLS data to study biodiversity of individual trees (from @caldersLaserScanningReveals2022)
+3D TLS data to study biomass of individual trees (from @caldersLaserScanningReveals2022)
 :::
 
 ::: {.notes}
