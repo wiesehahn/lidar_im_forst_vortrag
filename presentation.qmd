@@ -20,7 +20,6 @@ format:
     theme: [default, custom.scss]
     navigation-mode: vertical
     tbl-cap-location: bottom
-    chalkboard: true
 
 revealjs-plugins:
   - verticator
