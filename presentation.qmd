@@ -70,16 +70,9 @@ Lidar - Light Detection and Ranging
 
 
 ::: {.r-stack}
-![](https://thumbs.gfycat.com/SpiffyEquatorialArkshell.webp){width=1200}
+![](https://wiesehahn.github.io/presentation-fossgis25/images/als_function_1.gif){width=1200}
 
-![](https://j.gifs.com/Kzq8YE.gif){.fragment width=1200 fragment-index=1}
-
-![](https://i.ytimg.com/vi/uSESVm59uDQ/maxresdefault.jpg){.fragment width=1200 fragment-index=2}
-
-![](https://thumbs.gfycat.com/MiserlyQuarrelsomeAegeancat.webp){.fragment width=1200 fragment-index=3}
-
-
-![](https://thumbs.gfycat.com/QuerulousDimpledIndianglassfish.webp){.fragment width=1200 fragment-index=4}
+![](https://wiesehahn.github.io/presentation-fossgis25/images/als_function_2.gif){.fragment width=1200 fragment-index=1}
 :::
 
 ::: {.notes}
@@ -157,11 +150,11 @@ aus @moudryVegetationStructureDerived2023
 
 <br>
 
-**Bundesländer mit ALS Daten als Open Data:**
+**Bundesländer mit ALS-Daten als Open Data:**
 
-(Bayern), Berlin, Brandenburg, Hessen, Nordrhein-Westfalen, (Sachsen-Anhalt), Sachsen, Thüringen
+Bayern, Berlin, Brandenburg, Hessen, Nordrhein-Westfalen, Saarland, Sachsen-Anhalt, Sachsen, Thüringen
 
-Tabelle unter [gist.github.com/wiesehahn](https://gist.github.com/wiesehahn/6b6c215c227341f4faab03ff96fa7f1b)
+Aktuelle Liste unter [github.com/wiesehahn/lidar-availability](https://github.com/wiesehahn/lidar-availability/blob/main/availability_germany.md#lidar-availability---germany)
 
 <br>
 
@@ -187,7 +180,7 @@ Tabelle unter [gist.github.com/wiesehahn](https://gist.github.com/wiesehahn/6b6c
 ## Niedersachsen {transition="fade" transition-speed="fast"}
 
 ::: {#fig-als-lower-saxony-year}
-![](https://raw.githubusercontent.com/wiesehahn/lidar_exploration/master/results/figures/data_year.png)
+![](figures/data_year.png)
 
 Verfügbarkeit von ALS Daten in Niedersachsen nach Aufnahmejahr
 :::
@@ -196,7 +189,7 @@ Verfügbarkeit von ALS Daten in Niedersachsen nach Aufnahmejahr
 ## ALS Datenverfügbarkeit Niedersachsen {transition="fade" transition-speed="fast"}
 
 ::: {#fig-als-lower-saxony-month}
-![](https://raw.githubusercontent.com/wiesehahn/lidar_exploration/master/results/figures/data_month.png)
+![](figures/data_month.png)
 
 Verfügbarkeit von ALS Daten in Niedersachsen nach Aufnahmemonat
 :::
@@ -590,9 +583,9 @@ Lehre von den Formen der Erdoberfläche
 ## Hydrologie
 
 ::: {#fig-hydrology1}
-![](https://flf.julius-kuehn.de/images/10-twi.jpg)
+![](figures/topographic_wetness_index.JPG)
 
-Topographischer Feuchteindex (von [julius-kuehn.de](https://flf.julius-kuehn.de/webdienste/webdienste-des-flf/topographischer-feuchteindex.html))
+Topographischer Feuchteindex 
 :::
 
 ::: {.notes}
@@ -618,7 +611,7 @@ Wegebau / Instandhaltung
 ## Rückegassen
 
 ::: {#fig-skid-trails}
-![](https://besjournals.onlinelibrary.wiley.com/cms/asset/7a8b8ba0-4edf-41b3-96ae-a26d600e82fb/jec13837-fig-0005-m.jpg)
+![](figures/skid_trails.JPG)
 
 Skid trails derived from ALS data (from @lenoirUnveilUnseenUsing2022)
 :::
@@ -657,7 +650,7 @@ Verschneidung von ALS und kartierten Schadflächen
 
 ## TLS - Biomasse
 ::: {#fig-biomass-tls}
-![](https://besjournals.onlinelibrary.wiley.com/cms/asset/851ebcf4-37ce-4a39-adaf-7de29f23ea89/eso312197-gra-0001-m.jpg?trick=1678577274747)
+![](figures/tls_biomass.JPG)
 
 3D TLS data to study biomass of individual trees (from @caldersLaserScanningReveals2022)
 :::
@@ -830,7 +823,7 @@ Example of individual tree detection from ALS data (from [www.wur.nl](https://ww
 ## Pflanzegesellschaften {visibility="uncounted"}
 
 ::: {#fig-biodiversity}
-![](https://besjournals.onlinelibrary.wiley.com/cms/asset/16b9d7f7-eb29-4427-9851-342bee37f1ec/jec13837-toc-0001-m.jpg?trick=1670843457369)
+![](figures/plant_communities.JPG)
 
 Using Lidar to highlight legacy effects still affecting the current composition of understory plant communities and their responses to macro-environmental changes (from @lenoirUnveilUnseenUsing2022)
 :::
